@@ -1,5 +1,5 @@
 ﻿# Define the file path and name
-$filePath = "C:\Temp\BlankFile.txt"
+$filePath = "D:\Temp\BlankFile.txt"
  
 # Check if the directory exists; create it if it doesn't
 if (-not (Test-Path -Path (Split-Path -Path $filePath))) {
