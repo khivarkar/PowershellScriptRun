@@ -10,5 +10,3 @@ function Get-Greeting {
 function Get-DateInfo {
     "Today's date is: $(Get-Date -Format 'dddd, MMMM dd, yyyy')"
 }
-
-Export-ModuleMember -Function Get-Greeting, Get-DateInfo
