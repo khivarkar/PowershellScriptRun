@@ -1,7 +1,7 @@
 # UseMyModule.ps1
 
 # Specify the raw GitHub URL for the module
-$ModuleUrl = "https://raw.githubusercontent.com/Rushikesh-Mohite-DE/PSAutomations/Modules/mymodule.psm1"
+$ModuleUrl = "https://raw.githubusercontent.com/khivarkar/PowershellScriptRun/refs/heads/main/mymodule.psm1"
 
 # Retrieve the module content from GitHub
 try {
