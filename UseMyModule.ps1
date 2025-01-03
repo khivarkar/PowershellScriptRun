@@ -5,7 +5,7 @@ $ModuleUrl = "https://raw.githubusercontent.com/khivarkar/PowershellScriptRun/re
 
 # Retrieve the module content from GitHub
 try {
-    $ModuleContent = Invoke-RestMethod -Uri $ModuleUrl -Headers @{ "Authorization" = "Bearer $GitHubPAT" }
+    $ModuleContent = Invoke-RestMethod -Uri $ModuleUrl -Headers $Headers -UseBasicParsing; $ModuleContent=$ModuleContent -replace '^\uFEFF', ''
     Write-Host "Module content retrieved successfully."
 } catch {
     Write-Error "Failed to retrieve module content from GitHub. Error: $_"
